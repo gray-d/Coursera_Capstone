@@ -1,0 +1,16 @@
+Problem and Background:
+I want to understand if the severity of a car collision can accurately be predicted by variables that represent
+driving conditions and driver behavior. If a model can accurately predict car collision severity, then the model
+can take estimated conditions, such as weather or amount of drunk drivers, and predict the severity of car
+collisions for future situations. This will allow emergency services to plan accordingly.
+
+Data Description:
+The data set is a comma-separated values (.csv) file from the Seattle Department of Transportation.
+It contains collision data from thousands of collisions that occurred in Seattle from 2004 to the present.
+Each incident has an associated severity code which allows for supervised machine learning. However, the
+amount of cases per severity code is quite unbalanced so that will need to be rebalanced by either upsampling
+the minority cases or downsampling the majority case. To make the model, the collision type, weather, time of day,
+season, driver drunkeness, and day of the week will be included in the featured data set. Most of this data is
+categorical and will need 1-hot encoding or dummy values to become numerical and better suited for machine learning
+models such as Decision Tree and Logistic Regression. Once the most accurate model is created, it will be
+available for future use to predict car collision severity.
